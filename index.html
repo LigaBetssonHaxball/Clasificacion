@@ -10,40 +10,33 @@
             background-color: #2C2F33;
             color: #FFFFFF;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            padding: 20px;
             margin: 0;
         }
+        h1, h2 {
+            margin: 20px 0;
+            text-align: center;
+        }
         table {
-            width: 80%;
+            width: 100%;
+            max-width: 600px;
             border-collapse: collapse;
             margin: 20px 0;
-            font-size: 18px;
+            font-size: 16px;
             text-align: left;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
         }
         th, td {
-            padding: 12px 15px;
+            padding: 10px 12px;
         }
-        th {
-            background-color: #7289DA;
-            color: #FFFFFF;
+        @media (max-width: 600px) {
+        table, th, td {
+            font-size: 14px;
         }
-        tr:nth-child(even) {
-            background-color: #23272A;
-        }
-        tr:nth-child(odd) {
-            background-color: #2C2F33;
-        }
-        tr:hover {
-            background-color: #7289DA;
-            color: #FFFFFF;
-        }
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
+    }
     </style>
 </head>
 <body>
